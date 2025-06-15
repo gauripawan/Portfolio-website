@@ -85,10 +85,11 @@ body {
   top: -207px;
   }
         .bottom-left {
-  width: 400px;
+  /* width: 400px;
   height: 400px;
   left: -291px;
-  top: 40px;
+  top: 40px; */
+  display: none;
   }
 }
 
@@ -107,9 +108,10 @@ body {
   }
 
       .bottom-left {
-  width: 500px;
+  /* width: 500px;
   height: 500px;
   left: 2000px;
-  top: -887px;
+  top: -887px; */
+  display: none;
   }
 }
