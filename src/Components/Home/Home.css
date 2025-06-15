@@ -1,0 +1,281 @@
+body {
+  text-align: center;
+  font-family: "Montserrat", serif;
+  margin: 0;
+}
+
+.home-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 50px 50px;
+  padding-top: 160px;
+  margin: 0 auto;
+  flex-wrap: wrap; 
+}
+
+.text-section {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.heading1 {
+  color: #C8C8C8;
+  font-size: 32px;
+  font-family: Aftika;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.heading2 {
+  color: #6253BE;
+  font-size: 32px;
+  font-family: Aftika;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.home-para {
+  color: #C8C8C8;
+  font-size: 16px;
+  font-family: Seb Neue;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+  margin-top: 20px;
+  max-width: 550px;
+}
+
+.resume-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 26px;
+  background: rgba(16, 30, 42, 0.6);
+  border: 0.2px solid rgba(41, 36, 75, 0.44);
+  box-shadow: -2px 4px 4.5px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Seb Neue', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+    width: fit-content; 
+  max-width: 150px;
+}
+
+.resume-button:hover {
+  background: rgba(63, 46, 169, 0.62);
+  box-shadow: -2px 5px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.resume-button .icon {
+  font-size: 16px;
+}
+
+
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  position: relative;
+}
+
+.profile{
+    width: 420px;
+}
+
+.bubble1 {
+  position: absolute;
+  width: 56.46px;
+  height: 56.46px;
+  left: 70%;
+  top: 5%;
+  background: linear-gradient(191deg, #6253BE 0%, #03234E 100%);
+  border-radius: 9999px;
+  transform: translate(-50%, 0);
+}
+
+.bubble2 {
+  position: absolute;
+  width: 29.92px;
+  height: 29.92px;
+  left: 20%;
+  top: 80%;
+  background: linear-gradient(191deg, #6253BE 0%, #03234E 100%);
+  border-radius: 9999px;
+  transform: rotate(-30deg);
+}
+
+.hover-card1 {
+  position: absolute;
+  left: 62%;
+  top: 25%;
+}
+
+.hover-card2 {
+  position: absolute;
+  left: 2%;
+  top: 50%;
+}
+
+.hover-card3 {
+  position: absolute;
+  left: 60%;
+  top: 77%;
+}
+
+.scroll-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute; /* or fixed */
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Seb Neue', sans-serif;
+  color: white;
+  z-index: 100;
+  cursor: default;
+}
+
+.scroll-text {
+  margin-bottom: px;
+  font-size: 14px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
+.scroll-arrow {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-left: 8px;
+  margin-top: 0;
+}
+
+.scroll-arrow span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+  animation: arrowBounce 1.5s infinite;
+  opacity: 0.6;
+}
+
+.scroll-arrow span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.scroll-arrow span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes arrowBounce {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) translateY(6px);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translateY(12px);
+  }
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content {
+    padding: 80px 20px 40px 20px;
+  }
+
+  .text-section{
+    text-align: center;
+  }
+
+  .profile{
+    width: 355px;
+}
+
+  .resume-button{
+    margin: 20px auto;
+  }
+
+  .home-para {
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .heading1, .gap, .heading2 {
+    font-size: 28px;
+  }
+    .bubble1 {
+    left: 75%;
+    top: 8%;
+  }
+
+  .bubble2 {
+    left: 15%;
+    top: 60%;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .home-para {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .heading1, .heading2 {
+    font-size: 24px;
+  }
+
+    .bubble2 {
+    left: 10%;
+    top: 75%;
+  }
+    .hover-card1 {
+    scale: 0.7;
+    left: 54%;
+    top: 24%;
+  }
+
+      .hover-card2 {
+    scale: 0.7;
+    left: -12%;
+    top: 50%;
+  }
+      .hover-card3 {
+    scale: 0.7;
+    left: 52%;
+    top: 75%;
+  }
+
+}
+

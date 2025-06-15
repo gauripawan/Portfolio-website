@@ -1,0 +1,63 @@
+.project-section {
+  padding: 60px 40px;
+  color: #fff;
+}
+
+.project-heading {
+    color: #C8C8C8;
+  font-size: 22px;
+  font-family: Aftika;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.headingsub {
+    color: #6253BE;
+}
+
+.project-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.project-tab-btn {
+  padding: 8px 20px;
+  border: none;
+  background-color: #050f1e;
+  color: #fff;
+  font-family: Seb Neue;
+  font-size: 14px;
+  border: 1px rgba(63.06, 45.84, 168.45, 0.48) solid;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project-tab-btn.active,
+.project-tab-btn:hover {
+  background-color: #6253BE;
+}
+
+.project-card-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .project-tabs {
+    gap: 6px;
+    padding-left: 0 ;
+    padding-right: 0;
+  }
+
+  .project-tab-btn {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+}

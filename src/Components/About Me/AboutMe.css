@@ -1,0 +1,249 @@
+.about-section {
+  padding: 60px 0px;
+  color: #fff;
+}
+
+.heading {
+  color: #C8C8C8;
+  font-size: 22px;
+  font-family: Aftika;
+  font-weight: 700;
+}
+
+.me {
+  color: #6253BE;
+}
+
+.progressbar {
+  width: 60px;
+  height: 60px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 80px;
+  color: #fff;
+  min-height: 100vh;
+  max-width: 1300px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.left-section {
+  flex: 1;
+  min-width: 350px;
+  padding: 50px;
+}
+
+.left-section p {
+  margin-bottom: 25px;
+  color: #ccc;
+  font-size: 14px;
+  text-align: left;
+   font-family: Seb Neue;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  padding: 15px;
+  height: 80px;
+  background: rgba(9.03, 17.16, 24.27, 0.57);
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.20);
+  border-radius: 13px;
+  border: 0.40px #061426 solid;
+  backdrop-filter: blur(10px);
+  display: flex;
+  gap: 12px;
+}
+
+.card h3 {
+  font-size: 18px;
+   font-family: Seb Neue;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: left;
+  margin-bottom: 3px;
+}
+
+.card p{
+  font-size: 12px;
+   font-family: Seb Neue;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+
+.cardicon {
+  margin: auto;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 9999px;
+  border: 1px rgba(63.06, 45.84, 168.45, 0.48) solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section {
+  flex: 2;
+  min-width: 300px;
+  padding: 40px 120px;
+}
+
+.right-section h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+    font-family: Seb Neue;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  padding: 8px 20px;
+  border: none;
+  background-color: #050f1e;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Seb Neue;
+  font-size: 14px;
+  border: 1px rgba(63.06, 45.84, 168.45, 0.48) solid
+}
+
+.tab-button.active,
+.tab-button:hover {
+  background-color: #6253BE;
+}
+
+.skills-grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 30px 0px;
+}
+
+.skill-name {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #fff;
+}
+
+
+
+
+/* Responsive adjustments */
+
+@media (max-width: 1024px) {
+  .about-container {
+    padding: 0 60px;
+  }
+
+  .left-section {
+    padding: 60px 40px;
+  }
+
+  .right-section {
+    padding: 40px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 25px 0px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    padding: 0 30px;
+  }
+
+  .left-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .left-section p {
+    text-align: center;
+  }
+
+  .card-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    flex: 0 0 calc(50% - 15px);
+    height: auto;
+    text-align: center;
+  }
+
+  .right-section {
+    padding: 30px 20px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 40px 40px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 20px;
+  }
+
+  .about-container {
+    padding: 0 15px;
+  }
+
+  .left-section {
+    padding: 40px 10px;
+  }
+
+  .card {
+    flex: 0 0 100%;
+    width: auto;
+  }
+
+
+  .card-list {
+    padding: 10px;
+  }
+
+  .tabs {
+    gap: 8px;
+  }
+
+  .tab-button {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 0px;
+  }
+}

@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background: rgba(9.03, 17.16, 24.27, 0.57);
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.20);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 0.40px #061a34 solid;
+  backdrop-filter: blur(10px);
+  padding: 0 40px;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+.navbar-heading {
+  opacity: 0.56;
+  color: #637f9c;
+  font-size: 24px;
+  font-family: Aftika;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.navbar-tabs {
+  display: flex;
+  list-style: none;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-tabs li a {
+  text-decoration: none;
+  opacity: 0.56;
+  color: #607589;
+  transition: color 0.3s ease;
+  font-size: 18px;
+  font-family: Seb Neue;
+  font-weight: 400;
+  word-wrap: break-word;
+  position: relative;
+  padding: 5px 0;
+  display: inline-block;
+  width: 96px;
+}
+
+.navbar-tabs li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 0%;
+  height: 2px;
+  background-color: #6253BE;
+  transition: width 0.3s ease;
+}
+
+.navbar-tabs li a:hover::after {
+  width: 100%;
+}
+
+.navbar-tabs li a.active {
+  color: #6253BE;
+  opacity: 1;
+}
+
+.navbar-tabs li a.active::after {
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #173657;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 20px 30px;
+  }
+
+  .navbar-tabs {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-top: 15px;
+    align-items: center;
+  }
+
+  .navbar-tabs.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-heading {
+    font-size: 20px;
+  }
+
+  .navbar-tabs li a {
+    font-size: 16px;
+  }
+}

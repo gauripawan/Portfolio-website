@@ -1,0 +1,82 @@
+.info-card {
+  width: 320px;
+  background: rgba(10, 20, 30, 0.57);
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.20);
+  border-radius: 13px;
+  border: 0.40px #061426 solid;
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+    border-radius: 14px;
+}
+
+.card-content {
+  padding: 0 10px;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 8px;
+  text-align: left;
+  font-family: Seb Neue;
+  letter-spacing: 0.5px;
+}
+
+.card-description {
+  font-family: Seb Neue;
+  font-weight: 00;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #ccc;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.tech-stack {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.tech-box {
+  background: #00060E; border-radius: 66px; border: 1px rgba(48, 38, 112, 0.48) solid;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-family: Seb Neue;
+  color: #ccc;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: left;
+  padding: 12px 16px 16px;
+  gap: 20px;
+  
+}
+
+
+.icon-btn {
+  color: #6153bec6;
+  transition: transform 0.3s ease;
+}
+
+.icon-btn:hover {
+  transform: translateY(-4px);
+}

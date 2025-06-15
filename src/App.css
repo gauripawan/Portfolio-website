@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+body {
+  background-color: #00060E;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.top-left {
+  width: 1011px;
+  height: 1011px;
+  left: -291px;
+  top: -207px;
+  position: absolute;
+  background: radial-gradient(
+    ellipse 50% 50% at 50% 50%,
+    rgba(153, 141, 227, 0.15) 0%,
+    rgba(181, 174, 224, 0.07) 41%,
+    rgba(0, 6, 14, 0) 100%
+  );
+  border-radius: 9999px;
+  z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bottom-right {
+  width: 1011px;
+  height: 1011px;
+  left: 688px;
+  top: 466px;
+  position: absolute;
+  background: radial-gradient(
+    ellipse 50% 50% at 50% 50%,
+    rgba(153, 141, 227, 0.15) 0%,
+    rgba(181, 174, 224, 0.07) 41%,
+    rgba(0, 6, 14, 0) 100%
+  );
+  border-radius: 9999px;
+  z-index: -1;
 }
 
-.App-header {
-  background-color: #282c34;
+.bottom-left {
+  width: 1011px;
+  height: 1011px;
+  left: -291px;
+  top: 1207px;
+  position: absolute;
+  background: radial-gradient(
+    ellipse 50% 50% at 50% 50%,
+    rgba(153, 141, 227, 0.15) 0%,
+    rgba(181, 174, 224, 0.07) 41%,
+    rgba(0, 6, 14, 0) 100%
+  );
+  border-radius: 9999px;
+  z-index: -1;
+}
+
+.fade-container {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: opacity 0.7s ease;
+  color: #f3f4f6;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.opacity-100 {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.opacity-0 {
+  opacity: 0;
+}
+
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .bottom-right {
+    left: 0;
+    top: 10px;
+    width: 400px;
+    height: 400px;
   }
-  to {
-    transform: rotate(360deg);
+      .top-left {
+  width: 400px;
+  height: 400px;
+  left: -291px;
+  top: -207px;
+  }
+        .bottom-left {
+  width: 400px;
+  height: 400px;
+  left: -291px;
+  top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bottom-right {
+    left: -90px;
+    top: 1100px;
+    width: 400px;
+    height: 400px;
+  }
+    .top-left {
+  width: 500px;
+  height: 500px;
+  left: -191px;
+  top: -87px;
+  }
+
+      .bottom-left {
+  width: 500px;
+  height: 500px;
+  left: 2000px;
+  top: -887px;
   }
 }
